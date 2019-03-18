@@ -1,0 +1,21 @@
+<div *ngIf="customer">
+  <table>
+    <thead>
+    <tr> <td colspan="3"><b>Edit customer information</b></td></tr>
+    </thead>
+    <tr>
+      <td>ID:</td>
+      <td><input type="text" [(ngModel)]="customer.customerid" ></td>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" [(ngModel)]="customer.customername" ></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="text" [(ngModel)]="customer.customeremailId" ></td>
+    </tr>
+  </table>
+
+  <button (click)="editcustomer(customer._id)" class="btn btn-success">Update</button>
+</div>

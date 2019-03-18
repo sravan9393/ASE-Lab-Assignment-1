@@ -1,0 +1,17 @@
+<form class="form ">
+  <div class="row">
+    <div class="col">
+      <input class="form-control" placeholder="Customer Id" type="text" name="customerId" [(ngModel)]="customerId"/>
+    </div>
+
+    <div class="col">
+      <input class="form-control" placeholder="Customer Name"  type="text" name="customerName" [(ngModel)]="customerName"/>
+    </div>
+
+    <div class="col">
+      <input class="form-control" placeholder="Customer Email "  type="text" name="customerEmailId" [(ngModel)]="customerEmailId"/>
+    </div>
+
+    <button (click)="addCust()" class="btn btn-success">Create Customer</button>
+  </div>
+</form>
